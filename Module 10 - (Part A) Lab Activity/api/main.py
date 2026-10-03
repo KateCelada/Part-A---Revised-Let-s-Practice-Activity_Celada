@@ -33,7 +33,7 @@ SELECT
 FROM courses c
 LEFT JOIN enrollments e ON c.course_id = e.course_id
 GROUP BY c.course_id, c.course_code, c.course_title
-ORDER BY c.course_id ASC;
+ORDER BY total_students DESC, c.course_code ASC;
 """
 # END OF MODIFICATION ---------------------------------
 
